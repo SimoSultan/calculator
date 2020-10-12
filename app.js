@@ -1,6 +1,5 @@
 
 
-let header = document.getElementById('header')
 let inputScreen = document.getElementById('input-screen')
 let outputScreen = document.getElementById('output-screen')
 let buttons = document.getElementsByClassName('button')
@@ -126,4 +125,15 @@ function clear() {
 function removeLastCharFromString(str) {
   // remove the last char from a string
   return str.substring(0, str.length - 1);
+}
+
+
+module.exports = {
+  multiply,
+  sum,
+  minus,
+  divide,
+  performOperation,
+  clear,
+  handleButtonClick,
 }
