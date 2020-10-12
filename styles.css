@@ -47,12 +47,16 @@ div {
   background-color: rgb(231, 229, 229);
 }
 
+.footer-icons {
+  width: 7%;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   #calculator {
     width: 100% !important;
-    
+
   }
   .footer {
     font-size: small !important;
@@ -64,6 +68,9 @@ div {
   #calculator {
     width: 50% !important;
   }
+  .footer-icons {
+    width: 6%;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -73,6 +80,9 @@ div {
 @media only screen and (min-width: 992px) {
   #calculator {
     width: 40% !important;
+  }
+  .footer-icons {
+    width: 3%;
   }
 }
 
