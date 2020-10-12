@@ -9,11 +9,12 @@ for (let i = 0; i < buttons.length; i++) {
   element.addEventListener('click', handleButtonClick)
 }
 
-
+// GLOBAL VARS FOR OPERATIONS
 var num1 = ""
 var num2 = ""
 var operation = null
 
+// 
 function handleButtonClick() {
   let input = this.textContent
   switch (input) {

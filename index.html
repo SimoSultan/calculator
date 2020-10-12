@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SimoSultan's Calculator</title>
+  <title>Simo_Sultan's Calculator</title>
 
   <!-- FAVICON -->
   <link rel="icon" type="image/png" href="./favicon.png"/>
@@ -20,45 +20,60 @@
   
 </head>
 <body>
-  
-  <div class="container mt-2 w-25 h-100" id="calculator">
-    <h4 class="text-center">SimoSultan's Calculator</h4>
-    <div class="border col" id="output">
-      <div class="col pt-1 text-truncate" id="input-screen"></div>
-      <div class="col text-right" id="output-screen"></div>
+  <main>
+    <div class="container mt-2 h-100 pb-5 mb-5" id="calculator">
+      <h4 class="text-center">SimoSultan's Calculator</h4>
+      <div class="border col" id="output">
+        <div class="col pt-1 text-truncate" id="input-screen"></div>
+        <div class="col text-right" id="output-screen"></div>
+      </div>
+      <div class="col" id="button-container">
+        <div class="row" id="row1">
+          <span data-all-clear class="button function-button text-center align col-6">AC</span>
+          <span data-delete class="button function-button text-center align-middle col">DEL</span>
+          <span data-divide class="button function-button text-center align-middle col">&divide</span>
+        </div>
+        <div class="row" id="row2">
+          <span data-number class="button text-center align-middle col">1</span>
+          <span data-number class="button text-center align-middle col">2</span>
+          <span data-number class="button text-center align-middle col">3</span>
+          <span data-operand-multiply class="button function-button text-center align-middle col">&times</span>
+        </div>
+        <div class="row" id="row3">
+          <span data-number class="button text-center align-middle col">4</span>
+          <span data-number class="button text-center align-middle col">5</span>
+          <span data-number class="button text-center align-middle col">6</span>
+          <span data-operand-plus class="button function-button text-center align-middle col">+</span>
+        </div>
+        <div class="row" id="row4">
+          <span data-number class="button text-center align-middle col">7</span>
+          <span data-number class="button text-center align-middle col">8</span>
+          <span data-number class="button text-center align-middle col">9</span>
+          <span data-operand-minus class="button function-button text-center align-middle col">-</span>
+        </div>
+        <div class="row" id="row5">
+          <span data-number class="button text-center align-middle col">.</span>
+          <span data-number class="button text-center align-middle col">0</span>
+          <span data-operand-equal class="button function-button text-center align-middle col-6">=</span>
+        </div>
+      </div>
     </div>
-    <div class="col" id="button-container">
-      <div class="row" id="row1">
-        <span data-all-clear class="button function-button text-center align col-6">AC</span>
-        <span data-delete class="button function-button text-center align-middle col">DEL</span>
-        <span data-divide class="button function-button text-center align-middle col">&divide</span>
-      </div>
-      <div class="row" id="row2">
-        <span data-number class="button text-center align-middle col">1</span>
-        <span data-number class="button text-center align-middle col">2</span>
-        <span data-number class="button text-center align-middle col">3</span>
-        <span data-operand-multiply class="button function-button text-center align-middle col">&times</span>
-      </div>
-      <div class="row" id="row3">
-        <span data-number class="button text-center align-middle col">4</span>
-        <span data-number class="button text-center align-middle col">5</span>
-        <span data-number class="button text-center align-middle col">6</span>
-        <span data-operand-plus class="button function-button text-center align-middle col">+</span>
-      </div>
-      <div class="row" id="row4">
-        <span data-number class="button text-center align-middle col">7</span>
-        <span data-number class="button text-center align-middle col">8</span>
-        <span data-number class="button text-center align-middle col">9</span>
-        <span data-operand-minus class="button function-button text-center align-middle col">-</span>
-      </div>
-      <div class="row" id="row5">
-        <span data-number class="button text-center align-middle col">.</span>
-        <span data-number class="button text-center align-middle col">0</span>
-        <span data-operand-equal class="button function-button text-center align-middle col-6">=</span>
-      </div>
+  </main>
 
+  <footer class="footer">
+    <div class="container text-center">
+      <span class="text-muted ">
+        <strong>GitHub</strong> 
+        <a href="https://github.com/SimoSultan/calculator">Source Code</a>
+        |
+        <strong>Twitter: </strong> 
+        <a href="https://twitter.com/simo_sultan">@simo_sultan</a>
+      </span>
     </div>
-  </div>
+  </footer>
+
+
+
   
   <script src="./app.js"></script>
   
