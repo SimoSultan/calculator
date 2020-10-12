@@ -1,0 +1,71 @@
+body {
+  background-color: whitesmoke;
+}
+
+#output {
+  height: 100px;
+  background-color: rgb(61, 61, 61);
+  color: white;
+}
+
+.button {
+  /* width: 50px; */
+  height: 80px;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  border: 1px solid white;
+  display: grid;
+  align-items: center;
+}
+
+.function-button {
+  background-color: #eca175;
+}
+
+div {
+  font-size: larger;
+}
+
+#input-screen {
+  font-size: large;
+}
+
+.button:hover {
+  background-color: lightgrey;
+}
+
+.function-button:hover {
+  background-color:  hsl(22, 60%, 62%);
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #calculator {
+    width: 100% !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #calculator {
+    width: 50% !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #calculator {
+    width: 40% !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #calculator {
+    width: 25% !important;
+  }
+}

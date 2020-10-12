@@ -4,23 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SimoSultan's Calculator</title>
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="./favicon.png"/>
+  
+  <!-- BOOTSTRAP CDN --->
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous'>
+  <script defer src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>
+  <script defer src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js' integrity='sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN' crossorigin='anonymous'></script>
+  <script defer src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js' integrity='sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV' crossorigin='anonymous'></script>
+  <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="styles.css">
+  
 </head>
 <body>
-
-  <div class="container mt-5">
-    <h1>Hello</h1>
-    <h5>What's your name?</h5>
-    <div class="form-inline">
-      <div class="form-group col-md-3 mx-sm-3 mb-2">
-        <label for="username" class="sr-only">Username: </label>
-        <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-      </div>
-      <button id="username-submit" type="submit" class="btn btn-primary">Submit</button>
   
+  <div class="container mt-2 w-25 h-100" id="calculator">
+    <h4 class="text-center">SimoSultan's Calculator</h4>
+    <div class="border col" id="output">
+      <div class="col pt-1 text-truncate" id="input-screen"></div>
+      <div class="col text-right" id="output-screen"></div>
     </div>
-  
+    <div class="col" id="button-container">
+      <div class="row" id="row1">
+        <span data-all-clear class="button function-button text-center align col-6">AC</span>
+        <span data-delete class="button function-button text-center align-middle col">DEL</span>
+        <span data-divide class="button function-button text-center align-middle col">&divide</span>
+      </div>
+      <div class="row" id="row2">
+        <span data-number class="button text-center align-middle col">1</span>
+        <span data-number class="button text-center align-middle col">2</span>
+        <span data-number class="button text-center align-middle col">3</span>
+        <span data-operand-multiply class="button function-button text-center align-middle col">&times</span>
+      </div>
+      <div class="row" id="row3">
+        <span data-number class="button text-center align-middle col">4</span>
+        <span data-number class="button text-center align-middle col">5</span>
+        <span data-number class="button text-center align-middle col">6</span>
+        <span data-operand-plus class="button function-button text-center align-middle col">+</span>
+      </div>
+      <div class="row" id="row4">
+        <span data-number class="button text-center align-middle col">7</span>
+        <span data-number class="button text-center align-middle col">8</span>
+        <span data-number class="button text-center align-middle col">9</span>
+        <span data-operand-minus class="button function-button text-center align-middle col">-</span>
+      </div>
+      <div class="row" id="row5">
+        <span data-number class="button text-center align-middle col">.</span>
+        <span data-number class="button text-center align-middle col">0</span>
+        <span data-operand-equal class="button function-button text-center align-middle col-6">=</span>
+      </div>
+
+    </div>
   </div>
   
+  <script src="./app.js"></script>
   
 </body>
 </html>
